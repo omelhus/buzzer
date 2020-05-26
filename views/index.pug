@@ -2,7 +2,8 @@ doctype html
 html
   head
     title=title
-    meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,maximum-scale=1,user-scalable=0')
+    meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no,shrink-to-fit=no')
+    meta(name='HandheldFriendly',content='true')
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500,700,900")
     link(rel="stylesheet" href='/style.css')
   body.js-body
@@ -14,7 +15,6 @@ html
         img(src="/lets-play.png" class="main-image")
         h2="Let's play!"
         input(type='text' name='name' placeholder='Your name' required='required')
-        //input(type='number' name='team' placeholder='Your team number' required='required')
         button(type='submit')='Join!'
 
       div.view.js-joined.hidden
