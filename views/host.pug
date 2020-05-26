@@ -6,14 +6,19 @@ html
     link(rel="stylesheet" href='/style.css')
   body
     header
-      img.logo(src='/buzzer-logo.svg')
+      img.logo(src='/jeopardy-logo.png')
 
     div.container
       h2.js-active=`${users.length} joined`
       ol.js-buzzes
         each buzz in buzzes
-          li=`${buzz.name} on Team ${buzz.team}`
+          li=`${buzz.user.name}${latence ? ` (+${latence}ms)` : ''}`
       button.js-clear='Clear buzzes'
+      h3='Active Players'
+      ol.js-players
+        each user in users
+          li
+            a(onclick=`play('${user.sound}')`, href='#')=user.name
 
     script(src='/socket.io/socket.io.js')
     script(src='/host.js')

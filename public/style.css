@@ -122,8 +122,8 @@ button:focus {
 .buzzer {
   height: 10em;
   font-size: 2em;
-  background-color: rgb(243, 175, 185);
-  color: rgb(18, 30, 102);
+  background-color: #E61A23;
+  color: #fefefe;
 }
 .buzzer:focus {
   box-shadow: 0 0 0 3px #ABB7FF;
@@ -140,4 +140,36 @@ button:focus {
 
 .secondary:hover {
   background-color: rgb(44, 75, 255);
+}
+
+ol.js-players {
+  text-align: center;
+  list-style: none;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+ol.js-players a {
+  text-decoration: none;
+  color: #444;
+  display: inline-block;
+  padding: 5px;
+}
+
+.buzzes ol {
+  list-style: none;
+}
+
+.buzzes ol li:first-child {
+  font-size: 2rem;
+}
+
+
+.buzzes ol li:nth-child(2) {
+  font-size: 1.3rem;
+}
+
+.buzzers .container {
+  padding: 0;
 }
