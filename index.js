@@ -34,7 +34,6 @@ fs.readdir(soundsFolder, (err, files) => {
   files.forEach(file => {
     availableSounds.push(file);
   });
-  console.log({ availableSounds });
 });
 
 app.use(express.static('public'))
